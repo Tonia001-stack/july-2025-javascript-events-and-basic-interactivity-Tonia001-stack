@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Interactive Project</h1>
+    </header>
+
+    <!-- Section for interactive feature #1: Dynamic Content -->
+    <section class="interactive-section" id="section-one">
+        <h2>Dynamic Content</h2>
+        <p id="message-text">Click the button below to change this text.</p>
+        <button id="change-text-btn">Change Text</button>
+    </section>
+
+    <!-- Section for interactive feature #2: Show/Hide -->
+    <section class="interactive-section" id="section-two">
+        <h2>Show and Hide Content</h2>
+        <button id="toggle-content-btn">Show/Hide Content</button>
+        <div id="hidden-content" class="hidden">
+            <p>This content was hidden! It's great for showing extra details or side notes.</p>
+        </div>
+    </section>
+
+    <!-- Section for form validation -->
+    <section class="form-section">
+        <h2>Custom Form Validation</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <p id="email-error" class="error-message"></p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <p id="password-error" class="error-message"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
